@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 function TopBar({ onMenuClick }) {
   return (
-    <header className="sticky top-0 z-10 flex h-20 items-center justify-between border-b border-[#c5d3f5] bg-[#e4edff] px-4 shadow-sm md:px-8">
+    <header className="sticky top-0 z-10 flex h-20 items-center justify-between border-b border-[#c5d3f5] bg-white/95 shadow-md md:px-8">
       <div className="flex items-center gap-3">
         {/* Hamburger Menu for Mobile */}
         <button

@@ -24,7 +24,7 @@ function DashboardLayout({ active, children }) {
 }
 
 DashboardLayout.propTypes = {
-  active: PropTypes.oneOf(['curfew', 'blacklisted', 'archived']).isRequired,
+  active: PropTypes.oneOf(['curfew', 'blacklisted', 'archived', '/curfew-logs', '/blacklisted', '/archived']),
   children: PropTypes.node.isRequired,
 }
 

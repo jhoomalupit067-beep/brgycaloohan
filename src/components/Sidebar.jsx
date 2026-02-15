@@ -52,7 +52,7 @@ function Sidebar({ active, isOpen, onClose }) {
         `}
       >
         <div className="flex items-center justify-center px-6 py-4">
-          <img src="/src/assets/logo.svg" alt="logo" className="h-32 w-32 object-contain" />
+          <img src="/src/assets/caybiga Logo.svg" alt="logo" className="h-32 w-32 object-contain" />
         </div>
 
         <nav className="mt-4 flex-1 space-y-1 px-3">
@@ -60,7 +60,8 @@ function Sidebar({ active, isOpen, onClose }) {
             <NavLink
               key={item.label}
               to={item.to}
-              onClick={() => onClose()} // Close on mobile click
+              end={!['/curfew-logs', '/blacklisted', '/archived'].includes(item.to)}
+              onClick={() => onClose()}
               className={({ isActive }) =>
                 `flex w-full items-center gap-3 rounded-r-full px-4 py-2 text-sm font-semibold transition-colors ${isActive || active === item.to
                   ? 'bg-[#e9f1ff] text-[#2552c4] shadow-inner'
